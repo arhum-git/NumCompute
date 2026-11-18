@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=65"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "numcompute-stream"
+version = "0.2.0"
+description = "NumPy-based buffered streaming decision-tree framework"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "matplotlib>=3.6"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.setuptools]
+packages = ["numcompute", "numcompute_stream", "benchmark"]
